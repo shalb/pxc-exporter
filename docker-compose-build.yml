@@ -1,0 +1,7 @@
+version: '2'
+services:
+  pxc-exporter:
+    build:
+      context: ./
+    image: shalb/pxc-exporter:0.0.1
+
