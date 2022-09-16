@@ -43,6 +43,7 @@ def get_config():
         opt_val = os.environ.get(opt.upper())
         if opt_val:
             conf[opt] = int(opt_val)
+    # See https://github.com/percona/percona-xtradb-cluster-operator/blob/main/pkg/apis/pxc/v1/pxc_backup_types.go#L62-L67
     conf['state_map'] = {
         'Unknown': -1,
         'Failed': 0,
